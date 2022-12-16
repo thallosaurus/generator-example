@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form>
+        <label for="line">Linie</label>
+        <input type="radio" name="style" value="linear" id="line" checked>
+        <label for="sine">Sine</label>
+        <input type="radio" name="style" value="sine" id="sine">
+        <label for="log">Log</label>
+        <input type="radio" name="style" value="log" id="log">
+    </form>
+    <canvas id="canvas" width="500px" height="500px" style="border: 1px solid black;"></canvas>
+
+
+    <p>
+        <label for="scalex">Zoom X</label>
+        <input type="number" id="scalex" onchange="zoomXHandler(event)" value="1">
+    </p>
+    <p>
+        <label for="scalex">Zoom Y</label>
+        <input type="number" id="scalex" onchange="zoomYHandler(event)" value="1">
+    </p>
+    <p>
+        <label for="setx">X</label>
+        <input type="number" id="setx" onchange="setXHandler(event)" value="0">
+    </p>
+    <p>
+        <label for="sety">Y</label>
+        <input type="number" id="sety" onchange="setYHandler(event)" value="0">
+    </p>
+
+</body>
+</html>
